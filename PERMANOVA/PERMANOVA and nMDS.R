@@ -1,3 +1,21 @@
+##################################################################
+#                                                                #
+# Desenvolvedor: HENRIQUE PAULO SILVA DE MELO                    #
+#                                                                #
+# Contato:                                                       #
+#                                                                #
+##################################################################
+
+#----------------------------------------------------------------#
+# Reiniciando sessão R                                                                       
+# ---------------------------------------------------------------#
+rm(list=ls())
+graphics.off()
+options(warn=0)
+.rs.restartR()
+
+#----------------------------------------------------------------#
+
 # Carregar bibliotecas necessárias
 library(vegan)
 library(ggplot2)
@@ -6,6 +24,7 @@ library(ggplot2)
 getwd() # mostrar diretorio
 setwd("/media/rik_d/Dados/OneDrive/Documentos/Data Science/Multivariate in R/PERMANOVA") # define o diretorio
 dir()
+
 dados <- read.csv("Grupo_Sazonalidade.csv")
 
 
